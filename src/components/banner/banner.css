@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--base-color);
+  margin: 0;
+}
+
+.banner-container {
+  overflow-x: hidden;
+  width: 100vw;
+  position: fixed;
+  margin-top: 0rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: clamp(4.2rem, 2vw, 2rem);
+  color: var(--text-color);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.banner {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem;
+}
+
+.banner h1 {
+  position: absolute;
+  font-size: 20vw;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  z-index: -1;
+  top: 25vh;
+  left: 25vw;
+  transform: translateX(-50%);
+  background: var(--text-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.quote {
+  color: var(--text-color);
+  margin-top: 50vh;
+  margin-left: 30vw;
+  font-size: 1.2vw;
+  max-width: 90%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mini-info {
+  color: var(--text-color);
+  margin-top: -30vh;
+  margin-right: 30vw;
+  font-size: 1.2vw;
+  max-width: 90%;
+  animation: fadeIn 1s ease-in-out;
+  z-index: 5;
+}
+
+#container3D {
+  inset: 0;
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+  display: block;
+}
+
+.bannerBg {
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 1000px) {
+  .banner h1 {
+    top: 30vh;
+    font-size: 25vw;
+  }
+
+  .quote {
+    margin-top: 60vh;
+    font-size: 1.5vw;
+  }
+
+  .mini-info {
+   font-size: 1.5vw;
+   margin-top: 1vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    top: 30vh;
+    left: 10vw;
+    font-size: 25vw;
+  }
+
+  .quote {
+    margin-top: 40vh;
+    margin-left: 10vw;
+    font-size: 2vw;
+  }
+
+  .mini-info {
+   font-size: 2vw;
+   margin-top: -30vh;
+  }
+}
+@media screen and (max-width: 430px) {
+  .banner h1 {
+    top: 30vh;
+    left: 20vw;
+    font-size: 25vw;
+  }
+
+  .quote {
+    margin-top: 25vh;
+    font-size: 2.5vw;
+  }
+
+  .mini-info {
+   font-size: 2.5vw;
+   margin-top: -30vh;
+  }
+}
+@media screen and (max-width: 376px) {
+  .banner h1 {
+    top: 30vh;
+    left: 20vw;
+    font-size: 30vw;
+  }
+
+  .quote {
+    margin-top: 25vh;
+    font-size: 2.7vw;
+  }
+
+  .mini-info {
+   font-size: 2.7vw;
+   margin-top: -40vh;
+  }
+}
+@media screen and (max-width: 321px) {
+  .banner h1 {
+    top: 30vh;
+    left: 20vw;
+    font-size: 35vw;
+  }
+
+  .quote {
+    margin-top: 25vh;
+    font-size: 3vw;
+    margin-left: 40vw;
+  }
+
+  .mini-info {
+   font-size: 2.7vw;
+   margin-top: -40vh;
+  }
+}

@@ -1,0 +1,197 @@
+.case {
+    overflow-x: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    padding: 5vw;
+    position: relative;
+    width: 100%;
+    background-color: var(--base-varient);
+    z-index: 101;
+  }
+  
+  .case h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 2rem;
+    padding-bottom: 5rem;
+  }
+  
+  .move-icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .move-icon svg {
+    fill: var(--secondary-text);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 10;
+  }
+  
+  .move-icon svg:hover {
+    transform: scale(1.2);
+  }
+  
+  .case-content {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  
+  .case-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .case-content {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .brett {
+    flex: 0 0 auto;
+    width: 90vw;
+    display: flex;
+    padding-right: 4rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .content-txt {
+    text-align: left;
+    padding-top: 3vw;
+    padding-right: 8vw;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .content-txt h2 {
+    padding-bottom: 2rem;
+  }
+  
+  .content-txt li {
+    list-style: disc;
+    font-weight: 700;
+    color: var(--secondary-text);
+    margin-left: 1.2rem;
+  }
+  
+  .content-txt h2 span {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+  }
+  
+  .in {
+    color: var(--secondary-text);
+    padding-top: 1rem;
+    padding-right: 5rem;
+  }
+  
+  .content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .content iframe {
+    width: 100%;
+    height: 40vh;
+    border-radius: 2rem;
+    border: transparent;
+  }
+  
+  .service {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    width: 22vw;
+    min-width: 280px;
+    max-width: 320px;
+    min-height: 350px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: var(--secondary-text);
+    margin: 2rem 1rem;
+  }
+  
+  .card h1 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* ======================= */
+  /* RESPONSIVE BREAKPOINTS */
+  /* ======================= */
+  
+  @media (max-width: 1024px) {
+    .card {
+      width: 40vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .case h1 {
+      font-size: 2.2rem;
+      padding: 1rem;
+    }
+  
+    .brett {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 0;
+    }
+  
+    .content-txt {
+      padding-right: 0;
+      padding-top: 1rem;
+    }
+  
+    .in {
+      padding-right: 0;
+    }
+  
+    .move-icon {
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  
+    .card {
+      width: 80vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .case h1 {
+      font-size: 1.8rem;
+    }
+  
+    .card h1 {
+      font-size: 1.2rem;
+    }
+  
+    .content iframe {
+      height: 30vh;
+    }
+  }
+  

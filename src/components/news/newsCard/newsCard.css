@@ -1,0 +1,125 @@
+.news-section{
+  width: 100%;
+  display: flex;
+  animation: fadeIn 1s ease-in-out;
+}
+.news-container{
+  color: var(--text-color);
+  width: 40%;
+  overflow: hidden;
+  margin-left: 5%;
+}
+.news-container h2{
+  margin-top: 5rem;
+}
+.news-card{
+  display: grid;
+  width: 100%;
+  height: 50vh;
+  border: 1px solid #6e6e6e2a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 2rem;
+  margin-left: 1rem;
+}
+
+.news-content{
+  width: 100%;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-top: -40%;
+}
+.news-profile{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 20%;
+} 
+.news-profile button{
+  padding: 0.5rem;
+  height: 50%;
+  background-color: rgb(255, 0, 0);
+  border: transparent;
+  border-radius: 5px;
+  color: white;
+}
+.news-profile section{
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+.news-profile section h1{
+  font-size: 1rem;
+}
+.news-profile section img{
+  width: 70%;
+  height: 70%;
+  margin-right: 2rem;
+}
+.news-profile section h1 span{
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+.bg-logo{
+  position: absolute;
+  opacity: 0.5;
+  filter: blur(1rem);
+  width: 30%;
+  margin-left: 20%;
+  margin-top: 2%;
+  display: none;
+  z-index: -1;
+}
+
+.news-scroll-wrapper {
+  display: flex;
+  gap: 0.5rem; /* Space between cards */
+  overflow-x: auto;
+  padding: 2rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.news-scroll-wrapper::-webkit-scrollbar {
+  display: none; /* Optional: hide scrollbar */
+}
+
+.news-card {
+  flex: 0 0 auto; /* Prevent shrinking and enable horizontal scroll */
+  scroll-snap-align: start;
+}
+
+
+.news-navbar{
+  color: var(--text-color);
+  margin: 5%;
+  margin-top: 10%;
+  width: 15%;
+}
+.news-navbar ul li{
+  border: 1px solid #b3b3b32a;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+/* Trending news section */
+ 
+@media (max-width: 1400px) {
+  .news-section{
+    display: grid;
+  }
+  .news-container{
+    width: 60%;
+    margin-left: 15vw;
+  }
+}
+@media (max-width: 768px) {
+  .news-container{
+    width: 80%;
+    margin-left: 5vw;
+  }
+}

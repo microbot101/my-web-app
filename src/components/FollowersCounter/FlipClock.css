@@ -1,0 +1,100 @@
+.followers-counter {
+  background-color: var(--base-varient);
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.followers-counter h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.followers-counter ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.followers-counter ul li {
+  font-size: 2rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+
+.flip-clock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+  flex-shrink: 1;
+}
+
+.flip-digit {
+  position: relative;
+  width: clamp(40px, 12vw, 100px);
+  height: clamp(60px, 16vw, 150px);
+}
+
+.flip-digit .top,
+.flip-digit .bottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: var(--base-color);
+  color: var(--secondary-text);
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+
+.flip-digit .top {
+  transform-origin: bottom;
+  transform: rotateX(0deg);
+  z-index: 2;
+}
+
+.flip-digit .bottom {
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+
+.flip-digit.animate .top {
+  transform: rotateX(-90deg);
+  transition: transform 0.5s ease-in;
+}
+
+.flip-digit.animate .bottom {
+  transform: rotateX(0deg);
+  transition: transform 0.5s ease-out;
+}
+
+/* Optional: Add media query for very small screens */
+@media screen and (max-width: 1080px) {
+  .followers-counter h1 {
+    font-size: 1.5rem;
+  }
+
+  .flip-clock {
+    gap: 0.15rem;
+  }
+
+  .followers-counter ul li {
+    font-size: 1.5rem;
+  }
+}

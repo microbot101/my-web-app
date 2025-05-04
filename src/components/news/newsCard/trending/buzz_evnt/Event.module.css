@@ -1,0 +1,53 @@
+.eventCard {
+  width: 205%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+
+.eventCardContentWrapper {
+  transition: opacity 0.5s ease;
+}
+
+.eventFadeIn {
+  opacity: 1;
+}
+
+.eventFadeOut {
+  opacity: 0;
+}
+
+.eventCardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 16/9;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.eventFadeOut .eventCardImage {
+  opacity: 0;
+  /* 👇 Keeps image space intact */
+  visibility: hidden;
+}
+
+
+.eventCardContent {
+  padding: 16px;
+}
+
+.eventCardTitle {
+  font-size: 1.5rem;
+  margin: 0 0 8px 0;
+}
+
+.eventCardDescription {
+  font-size: 1rem;
+}

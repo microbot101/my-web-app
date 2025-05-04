@@ -1,0 +1,10 @@
+.ticker-track{
+    width: 100%;
+    display: flex;
+    padding-top: 7rem;
+}
+.ticker-item{
+    width: 100%;
+    color: var(--text-color);
+    display: flex;
+}

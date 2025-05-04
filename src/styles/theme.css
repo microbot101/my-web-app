@@ -1,0 +1,19 @@
+/* Light Mode */
+:root{
+  --base-color: white;
+  --base-varient: #e3e5ec;
+  --base-varient-a: #e3e5eca5;
+  --text-color: #070700;
+  --secondary-text: #8a8b97;
+  --primary-color: #898989;
+  --acent-color: rgb(17, 0, 255);
+}
+.darkmode{
+  --base-color: rgb(24, 24, 24);
+  --base-varient: #3a3a3d;
+  --base-varient-a: #3a3a3d;
+  --text-color: #f7f7f7;
+  --secondary-text: #7d7d88;
+  --primary-color: #535353;
+  --acent-color: rgb(103, 125, 255);
+} 

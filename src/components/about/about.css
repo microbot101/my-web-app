@@ -1,0 +1,92 @@
+.about {
+    width: 100%;
+    padding: 2rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_buzz,
+.core-p,
+.podcast,
+.ama {
+    width: 100%;
+    max-width: 800px;
+    padding: 3rem 1.5rem;
+    text-align: left;
+}
+.about_buzz, .podcast{
+    margin-right: 20vw;
+}
+.core-p, .ama{
+    margin-left: 50vw;
+}
+
+/* Core-p section list styling */
+.core-p li {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+/* Podcast buttons */
+.podcast ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.podcast ul li a,
+.ama section a {
+    color: var(--secondary-color);
+    background-color: var(--base-varient);
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.podcast ul li a:hover,
+.ama section a:hover {
+    color: var(--acent-color);
+}
+
+/* AMA section buttons */
+.ama section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .about_buzz,
+    .core-p,
+    .podcast,
+    .ama {
+        padding: 2rem 1rem;
+    }
+
+    .podcast ul,
+    .ama section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .podcast ul li a,
+    .ama section a {
+        width: 100%;
+        text-align: center;
+    }
+    .about_buzz, .podcast{
+        margin-right: 0vw;
+    }
+    .core-p, .ama{
+        margin-left: 0vw;
+    }
+    
+}
+

@@ -1,0 +1,12 @@
+.ln-bg{
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 150%;
+    margin-top: -70vw;
+    z-index: -1;
+
+}
+.ln-bg img{
+    width: 70%;
+    opacity: 0.1;
+}

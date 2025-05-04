@@ -1,0 +1,79 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "homepage": ".",
+  "dependencies": {
+    "@gltf-transform/core": "^4.0.10",
+    "@gltf-transform/extensions": "^4.0.10",
+    "@gltf-transform/functions": "^4.0.10",
+    "@react-three/drei": "^9.114.3",
+    "@react-three/fiber": "^8.17.10",
+    "@tailwindcss/vite": "^4.1.4",
+    "axios": "^1.8.4",
+    "body-parser": "^1.20.3",
+    "chart.js": "^4.4.5",
+    "cors": "^2.8.5",
+    "cra-template": "1.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "gsap": "^3.13.0",
+    "multer": "^1.4.5-lts.2",
+    "node-fetch": "^3.3.2",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^7.5.0",
+    "react-scripts": "^5.0.1",
+    "recharts": "^2.15.3",
+    "tailwindcss": "^4.1.4",
+    "three": "^0.169.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "eject": "react-scripts eject",
+    "start:backend": "node newspage_backend.js",
+    "start:backend-twitter": "node server.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "images": [
+    {
+      "uri": "textures/material_0_diffuse.png"
+    },
+    {
+      "uri": "textures/material_0_normal.png"
+    },
+    {
+      "uri": "textures/material_0_occlusion.png"
+    },
+    {
+      "uri": "textures/material_0_specularGlossiness.png"
+    }
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "concurrently": "^9.1.2"
+  },
+  "proxy": "http://localhost:5000"
+}

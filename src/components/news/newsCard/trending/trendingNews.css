@@ -1,0 +1,127 @@
+.trending-news-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  padding: 6rem;
+  color: var(--text-color);
+}
+
+
+.coin-analisis {
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+}
+
+.trending-news-section h2 {
+  margin-bottom: 0.3rem;
+}
+
+.gainers h2 {
+  color: green;
+}
+
+.losers h2 {
+  color: red;
+}
+
+.meme-coins h2 {
+  color: #ff9900;
+}
+
+.coin {
+  margin-bottom: 0.8rem;
+}
+
+.coin .positive {
+  color: green;
+}
+
+.coin .negative {
+  color: red;
+}
+
+.meme-coins {
+  
+}
+
+.coin {
+  margin-bottom: 1rem;
+}
+
+.coin-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coin-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+
+.watch-list {
+  padding: 1.5rem;
+  color: var(--text-color);
+  border-radius: 12px;
+}
+
+.watch-list h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.watch-list ul {
+  list-style: decimal;
+  padding: 0;
+  margin: 0;
+}
+
+.watch-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.watch-list li:last-child {
+  border-bottom: none;
+}
+
+.watch-list .coin-logo {
+  width: 40px;
+  object-fit: contain;
+}
+
+.watch-list p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.section{
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+ 
+@media (max-width: 1000px) {
+  .trending-news-container{
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .trending-news-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .watch-list {
+    max-width: 100%;
+    height: auto;
+  }
+}
